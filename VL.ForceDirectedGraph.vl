@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="AjKiFN7r27tNW3HaMT9UVU" LanguageVersion="2020.1.7.184" Version="0.128">
+  <NugetDependency Id="TDDmSzeOaBNOPME6UNhyOQ" Location="VL.CoreLib" Version="2020.1.7" />
+  <Patch Id="S1XOpIe3F0xPmVGQ67ozef">
+    <Canvas Id="VTDHx97icMrNhGESL8cfDD" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ EdgeSet ************************
+
+-->
+      <Node Name="EdgeSet" Bounds="449,372" Id="AfrBG3hY5k7MtRjQbS21gO">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="RecordDefinition" Name="Record" />
+        </p:NodeReference>
+        <Patch Id="AZAqEBkNsgkQQsfIomAGeT">
+          <Canvas Id="JyPlWl7SCb7O9iUZYOeYT6" CanvasType="Group">
+            <Pad Id="QE91g9xb9ygNfkUxZt2emi" SlotId="I9PLggH17dLMA3zC0A2H9s" Bounds="321,387" />
+            <Pad Id="BIgCt8cHx6uLrdfodA4aAw" SlotId="UkkpyauNX4kPMzNmABqGKd" Bounds="405,387" />
+            <Pad Id="C6NKgmYs2ppM3MkAm5fLUr" SlotId="TEMSqdgNo6lNIUrPiEKW0B" Bounds="489,387" />
+            <ControlPoint Id="GSnvznqqlIZNcmoosnskkT" Bounds="321,357" />
+            <ControlPoint Id="TnH1JJicCmxPaREuiB4j0T" Bounds="321,417" />
+            <ControlPoint Id="PKheAUV713iN8Dgepq9Vsy" Bounds="405,357" />
+            <ControlPoint Id="E5w58g2YdXmMnB8BFd4qRn" Bounds="405,417" />
+            <ControlPoint Id="BK9CRrEp7rSPgVEk2PVlHw" Bounds="489,357" />
+            <ControlPoint Id="HfBOn6hKJYaP7JswHwNuQq" Bounds="489,417" />
+          </Canvas>
+          <Patch Id="Rj1BApdnDmNOG8EQvVoVhc" Name="Create">
+            <Pin Id="A7db3nbou4wQFZJIDJsU8h" Name="Edge" Kind="InputPin" />
+            <Pin Id="LhGn4dn0FOfPWGlwNxDGiS" Name="From" Kind="InputPin" />
+            <Pin Id="IDH9sqEf8DbOXEZDzQdbXS" Name="To" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="S7d2GNprRk0PwBGaepNWpV" IsHidden="true">
+            <Fragment Id="UsRH9ZwzpjjPyVqUFRAUeY" Patch="Rj1BApdnDmNOG8EQvVoVhc" Enabled="true" />
+            <Fragment Id="VxAQtktgvxdOrZr4aTG7HI" Patch="GRJESvQ0LtyNE9C7lxY7SS" />
+          </ProcessDefinition>
+          <Slot Id="I9PLggH17dLMA3zC0A2H9s" Name="Edge">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Edge" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="UkkpyauNX4kPMzNmABqGKd" Name="From">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="AbstractVector" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="TEMSqdgNo6lNIUrPiEKW0B" Name="To">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="AbstractVector" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="KoLgwKXxQN0LrmYOdsyNy2" Ids="A7db3nbou4wQFZJIDJsU8h,GSnvznqqlIZNcmoosnskkT" IsHidden="true" />
+          <Link Id="Cn9uIE8k8ygNw9MeEJpzdJ" Ids="GSnvznqqlIZNcmoosnskkT,QE91g9xb9ygNfkUxZt2emi" />
+          <Patch Id="GRJESvQ0LtyNE9C7lxY7SS" Name="Split">
+            <Pin Id="Fb2TJHTmd1ZMis5F0pE6MR" Name="Edge" Kind="OutputPin" />
+            <Pin Id="K0PvfYsYYXSNPSJNQmVcrY" Name="From" Kind="OutputPin" />
+            <Pin Id="MIKBWqNYpLpNj1QZmwlLzj" Name="To" Kind="OutputPin" />
+          </Patch>
+          <Link Id="Utaute9OUM1O8ICC3XKzNU" Ids="TnH1JJicCmxPaREuiB4j0T,Fb2TJHTmd1ZMis5F0pE6MR" IsHidden="true" />
+          <Link Id="D2IhQm1YZnhO5NZXAXBK5V" Ids="QE91g9xb9ygNfkUxZt2emi,TnH1JJicCmxPaREuiB4j0T" />
+          <Link Id="Sk1jyLTfRyIPPxj1JoJaWZ" Ids="LhGn4dn0FOfPWGlwNxDGiS,PKheAUV713iN8Dgepq9Vsy" IsHidden="true" />
+          <Link Id="Jdi0OxrFRpoOcl6mL2KGZx" Ids="PKheAUV713iN8Dgepq9Vsy,BIgCt8cHx6uLrdfodA4aAw" />
+          <Link Id="Q6yf0JICTh0OKOI4zpnY1y" Ids="E5w58g2YdXmMnB8BFd4qRn,K0PvfYsYYXSNPSJNQmVcrY" IsHidden="true" />
+          <Link Id="Rn0oe3DNFX5PoVb77Wskzc" Ids="BIgCt8cHx6uLrdfodA4aAw,E5w58g2YdXmMnB8BFd4qRn" />
+          <Link Id="FvUgVSzflKSNBhLWY4Jm6t" Ids="IDH9sqEf8DbOXEZDzQdbXS,BK9CRrEp7rSPgVEk2PVlHw" IsHidden="true" />
+          <Link Id="NU7YOmcYJmsOoUQLKR4XQ9" Ids="BK9CRrEp7rSPgVEk2PVlHw,C6NKgmYs2ppM3MkAm5fLUr" />
+          <Link Id="EgPZuGpIXzBNnZCFtr3pWH" Ids="HfBOn6hKJYaP7JswHwNuQq,MIKBWqNYpLpNj1QZmwlLzj" IsHidden="true" />
+          <Link Id="BTymfpPZSRaPfVRfz7sbvH" Ids="C6NKgmYs2ppM3MkAm5fLUr,HfBOn6hKJYaP7JswHwNuQq" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ NodeSet ************************
+
+-->
+      <Node Name="NodeSet" Bounds="449,424" Id="VNXM5jwWTkTLfzthG99Rl0">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="RecordDefinition" Name="Record" />
+        </p:NodeReference>
+        <Patch Id="HORfU4cNKiQMOhw9rIX3m7">
+          <Canvas Id="OAiZQAbK9ixPfpfzqYooHn" CanvasType="Group">
+            <Pad Id="Ka8TTHdIWxaQQOBGla5wZE" SlotId="JSdr5mYfhVjMWcAlvSI0J1" Bounds="448,456" />
+            <Pad Id="LYmn1lWtjr7PMJiLQYwY4U" SlotId="UpvLKQBfM55NNG3q7fUQvu" Bounds="546,456" />
+            <ControlPoint Id="OZ7aYm4BtolORNRIkyZn28" Bounds="448,426" />
+            <ControlPoint Id="HRVATpgdyX3NZDpQ3FOXJW" Bounds="448,486" />
+            <ControlPoint Id="Su8XYPiiuUNQUT4l3THWKZ" Bounds="546,426" />
+            <ControlPoint Id="LKEixi6TecALFtf4bIiMt4" Bounds="546,486" />
+          </Canvas>
+          <Patch Id="QaCMVB53OdMM5ydGmEm2GE" Name="Create">
+            <Pin Id="Hz3eFpf83d0OsPrae4DGJy" Name="Node" Kind="InputPin" />
+            <Pin Id="VmqjTCMXOMjM32FY503vEM" Name="Position" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="OzmqZM1cmfAPZ4sieILy2X" IsHidden="true">
+            <Fragment Id="Aaj8YEGyY8SLuZxXkqC7CP" Patch="QaCMVB53OdMM5ydGmEm2GE" Enabled="true" />
+            <Fragment Id="GhXrFp5UXSHOAbi0sy9cJ7" Patch="KqJdk1ANrNDOAqMPy5hwGM" />
+          </ProcessDefinition>
+          <Slot Id="JSdr5mYfhVjMWcAlvSI0J1" Name="Node">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Node" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="UpvLKQBfM55NNG3q7fUQvu" Name="Position">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="AbstractVector" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="LuwHCN04d9wOeey37RuOBH" Ids="Hz3eFpf83d0OsPrae4DGJy,OZ7aYm4BtolORNRIkyZn28" IsHidden="true" />
+          <Link Id="BfNglAc7af5Nh943Sz3phw" Ids="OZ7aYm4BtolORNRIkyZn28,Ka8TTHdIWxaQQOBGla5wZE" />
+          <Patch Id="KqJdk1ANrNDOAqMPy5hwGM" Name="Split">
+            <Pin Id="DTEZ9xX682LOj2YslLvnnu" Name="Node" Kind="OutputPin" />
+            <Pin Id="JXxuWVQjallQBhDGu4DABe" Name="Position" Kind="OutputPin" />
+          </Patch>
+          <Link Id="GbtHL9oxjlnLs9uzIOA89y" Ids="HRVATpgdyX3NZDpQ3FOXJW,DTEZ9xX682LOj2YslLvnnu" IsHidden="true" />
+          <Link Id="GmVBmEu2nxlNAMFAdzzcR2" Ids="Ka8TTHdIWxaQQOBGla5wZE,HRVATpgdyX3NZDpQ3FOXJW" />
+          <Link Id="IPRe40ovAPXNkAtnhBXOLx" Ids="VmqjTCMXOMjM32FY503vEM,Su8XYPiiuUNQUT4l3THWKZ" IsHidden="true" />
+          <Link Id="GecG7aIsUV6M4xA1y3iAja" Ids="Su8XYPiiuUNQUT4l3THWKZ,LYmn1lWtjr7PMJiLQYwY4U" />
+          <Link Id="Czn0ekgntPoQR6s9bR991v" Ids="LKEixi6TecALFtf4bIiMt4,JXxuWVQjallQBhDGu4DABe" IsHidden="true" />
+          <Link Id="IGigkOwB2uSNDLO5kkrOMQ" Ids="LYmn1lWtjr7PMJiLQYwY4U,LKEixi6TecALFtf4bIiMt4" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CreateEdge ************************
+
+-->
+      <Node Name="CreateEdge" Bounds="642,402,224,186" Id="RYYOKLZIGsdLxxFtDW9raU">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="NIHEJuyPZPUORMn7LU1TpP">
+          <Node Bounds="690,516,68,26" Id="N75nOFlkHwDMcMiBDNgcAl">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.Graph" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CreateEdge" />
+              <CategoryReference Kind="AssemblyCategory" Name="Graph" NeedsToBeDirectParent="true" />
+              <PinReference Kind="InputPin" Name="I Source">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="EpForceDirectedGraph.cs" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+                  <Choice Kind="TypeFlag" Name="Node" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="MPUFDSN0nWvP5ksjI3IQqS" Name="Input" Kind="StateInputPin" />
+            <Pin Id="S2G5yFEZg5oOD33wyW7RZB" Name="I Source" Kind="InputPin" />
+            <Pin Id="JNNiNiExRmcMi4dCSDPHEM" Name="I Target" Kind="InputPin" />
+            <Pin Id="DpIH14pmh4NODCEsSOZv5e" Name="I Data" Kind="InputPin" />
+            <Pin Id="O46eAru1QNFQPqRZ0aCXWO" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="L7QeYdB2BznN6FpGtj8WsQ" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="754,477,59,26" Id="SPT5GV1DL8DOE7YGgeCIMl">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.EdgeData" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="EdgeData" />
+              <Choice Kind="OperationCallFlag" Name="Setlength" />
+            </p:NodeReference>
+            <Pin Id="J3vjxsgtNmGO7icGi7rvH5" Name="Input" Kind="InputPin" />
+            <Pin Id="SDL5UR74NPoO5tBmNQC0om" Name="Value" Kind="InputPin" />
+            <Pin Id="OAaXoQSrwJVMgc0q6A5plU" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Link Id="SmqYCGDXlCBPnONIyLO4Ig" Ids="OAaXoQSrwJVMgc0q6A5plU,DpIH14pmh4NODCEsSOZv5e" />
+          <Node Bounds="754,436,50,26" Id="T4OZvW3XYbnPGbxJ0hXRWX">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.EdgeData" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="EdgeData" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="SGpNx6BBpEoOMCCMcGlo28" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Link Id="NR72tAiqZcFPlYCr6eTpWj" Ids="SGpNx6BBpEoOMCCMcGlo28,J3vjxsgtNmGO7icGi7rvH5" />
+          <ControlPoint Id="AymKsSUIiAGOSykyyYu8Yv" Bounds="811,420" />
+          <Link Id="JxQDzBOX3EvLuCchGAx2mA" Ids="AymKsSUIiAGOSykyyYu8Yv,SDL5UR74NPoO5tBmNQC0om" />
+          <Pin Id="TOAqTItcSiTMU5OeOYv7Ws" Name="Length" Kind="InputPin" Bounds="705,425" />
+          <Link Id="G1FafqxQFp5LjMlSdo17Ob" Ids="TOAqTItcSiTMU5OeOYv7Ws,AymKsSUIiAGOSykyyYu8Yv" IsHidden="true" />
+          <Pin Id="QMerHbN1UtCP1NrmetOgkO" Name="Input" Kind="InputPin" />
+          <ControlPoint Id="KB8DHFsbnpwNuEhB8cgTYj" Bounds="656,423" />
+          <Link Id="MKOf9KT6YU1MHetAIitJvm" Ids="QMerHbN1UtCP1NrmetOgkO,KB8DHFsbnpwNuEhB8cgTYj" IsHidden="true" />
+          <Link Id="MtmhT5TZEoAQX5JwRdENPI" Ids="KB8DHFsbnpwNuEhB8cgTYj,MPUFDSN0nWvP5ksjI3IQqS" />
+          <Pin Id="Hi6SjBZ3ZiuLwPnEg6c3ZX" Name="Source" Kind="InputPin" />
+          <ControlPoint Id="IqWFDY14kxEN9TrsHM04AK" Bounds="701,422" />
+          <Link Id="KGFkNZkJBE0Mrrs9fzg7y4" Ids="Hi6SjBZ3ZiuLwPnEg6c3ZX,IqWFDY14kxEN9TrsHM04AK" IsHidden="true" />
+          <Link Id="TDHMFTX46woOFWK0PlLpvS" Ids="IqWFDY14kxEN9TrsHM04AK,S2G5yFEZg5oOD33wyW7RZB" />
+          <Pin Id="P7zBUkFHkbdQZV9cgq3Egi" Name="Target" Kind="InputPin" />
+          <ControlPoint Id="SVdQbUzZvH5Nsnh6SuOKv4" Bounds="752,422" />
+          <Link Id="NeB5Lb4Cf3uPs2Pu8NkFZp" Ids="P7zBUkFHkbdQZV9cgq3Egi,SVdQbUzZvH5Nsnh6SuOKv4" IsHidden="true" />
+          <Link Id="Ibg28l6taNiOEdaGlEsZKg" Ids="SVdQbUzZvH5Nsnh6SuOKv4,JNNiNiExRmcMi4dCSDPHEM" />
+          <Pin Id="JxitR7jHeaqMfiPFXJhMyp" Name="Output" Kind="OutputPin" />
+          <ControlPoint Id="RiTZ9PSx2ctLIy6fBeD8u0" Bounds="690,571" />
+          <Link Id="UiGZeNEaHaUMpxF3K3Etg7" Ids="RiTZ9PSx2ctLIy6fBeD8u0,JxitR7jHeaqMfiPFXJhMyp" IsHidden="true" />
+          <Link Id="ISFOeMu0DtXLwYenRSDkMy" Ids="O46eAru1QNFQPqRZ0aCXWO,RiTZ9PSx2ctLIy6fBeD8u0" />
+          <Pin Id="SAdBBXdnIjvLN8Wj5qd3m7" Name="Result" Kind="OutputPin" />
+          <ControlPoint Id="LkjXW9CxR52O3MAmnpkPT3" Bounds="754,571" />
+          <Link Id="FsWgkO6dMAbLPDVwjkPDnP" Ids="LkjXW9CxR52O3MAmnpkPT3,SAdBBXdnIjvLN8Wj5qd3m7" IsHidden="true" />
+          <Link Id="LOeRYYaGwjlLBexTK55hnG" Ids="L7QeYdB2BznN6FpGtj8WsQ,LkjXW9CxR52O3MAmnpkPT3" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Node ************************
+
+-->
+      <Node Name="Node" Bounds="222,515" Id="DmJwOlBhDaNOPomu6liAem">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="EpForceDirectedGraph.cs" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+          <Choice Kind="ClassType" Name="Node" />
+        </p:TypeAnnotation>
+        <Patch Id="AD5RqIpi3k1OITPSXwQTBq">
+          <Canvas Id="RzZgRjhnDvfNWba0RqZt00" CanvasType="Group" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="J4kSp8Y665gMUlxi1bhwtI" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ AbstractVector ************************
+
+-->
+      <Node Name="AbstractVector" Bounds="222,580" Id="SiDrCkpgbPsM8fJpXOhr3V">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="EpForceDirectedGraph.cs" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+          <Choice Kind="ClassType" Name="AbstractVector" />
+        </p:TypeAnnotation>
+        <Patch Id="KahmqovkAtKNRJjmre418A">
+          <Canvas Id="ODWS9wAfJ5SLb0Jv8kyWyH" CanvasType="Group" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="S4u3zSqiK8LMRjCiTDYOoa" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Edge ************************
+
+-->
+      <Node Name="Edge" Bounds="222,645" Id="TIpIZMVOcFHNsuCsXfNdiz">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="EpForceDirectedGraph.cs" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+          <Choice Kind="ClassType" Name="Edge" />
+        </p:TypeAnnotation>
+        <Patch Id="S1u7LmCJNPhNq9o7zlsbxT">
+          <Canvas Id="SAzpmljd6DFMfKouo1r3kn" CanvasType="Group" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="RqOUCuGKKiTQP6sHUTcZdV" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Overlay Id="BBx7lQ3Oj50NZzzlE4Mlpl" Name="Forwards" Bounds="153,445,251,248" />
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MxwRCimCOlOOElNtYsJuTJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PDLWlp1oiOzOzZ3oPJ9Yfo">
+        <Canvas Id="SrsbHICLaosPbG08uQJ4gZ" CanvasType="Group">
+          <Node Bounds="302,289,366,150" Id="KaovGPkOOhmLLM5d1NCfs8">
+            <p:NodeReference LastCategoryFullName="DelegateRenderer" LastSymbolSource="VL.ForceDirectedGraph.dll">
+              <CategoryReference Kind="ClassType" Name="DelegateRenderer" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <CategoryReference Kind="ClassType" Name="DelegateRenderer" NeedsToBeDirectParent="true" />
+              <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+            </p:NodeReference>
+            <Pin Id="QHL9zFPBTSWMOkRkYVt67G" Name="I Force Directed" Kind="InputPin" />
+            <Pin Id="Fb3UHy12xvCNTxSe284E4B" Name="Output" Kind="StateOutputPin" />
+            <Patch Id="UYf4aKPmhkKPIe2Klb48pY" Name="Clear Delegate" ManuallySortedPins="true">
+              <Node Bounds="315,331,66,19" Id="DBy0TQ8CUvoNxMHg5RXHfo">
+                <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
+                  <Choice Kind="OperationCallFlag" Name="Clear" />
+                </p:NodeReference>
+                <Pin Id="AOHe5U1F8amP6RbRhBFtSG" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CqzLD7180EpNkqL23WSDZF" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="314,393,66,26" Id="OmnLV9qBdAhQM1QmaHvWJJ">
+                <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Clear" />
+                  <CategoryReference Kind="ClassType" Name="SpreadBuilder" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="JC8jcXqryrxQBuIy89ceSC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="QkBh7Mb7E4VMVFSpFCyre5" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <Patch Id="AaFHL2XoIB9QdKEL3JOVsE" Name="Draw Edge Delegate" ManuallySortedPins="true">
+              <Pin Id="RyQJjikrdDzMiDgvA9wjKF" Name="Input 1" Kind="InputPin" />
+              <Pin Id="CKdEpHdV35QNB0BcY4MXXq" Name="Input 2" Kind="InputPin" />
+              <Pin Id="LSahYmG9gzxODxgCIuzoIL" Name="Input 3" Kind="InputPin" />
+              <ControlPoint Id="Ph7uSiDibe3LF7ouFu8uGt" Bounds="382,297" />
+              <ControlPoint Id="LLDyORq9fn6PTaGNTQnLz5" Bounds="442,297" />
+              <ControlPoint Id="Sq8U8HVT5W7LKl78qEuiet" Bounds="502,297" />
+              <Node Bounds="420,333,54,26" Id="TmRDTrDMCfKQHQB7U5g2E4">
+                <p:NodeReference>
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="EdgeSet" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="QEvS6jSyj1wONqiSOiX7R2" Name="Edge" Kind="InputPin" />
+                <Pin Id="SKDcxuiUBV1LDxLS5eBDAz" Name="From" Kind="InputPin" />
+                <Pin Id="KHqvebKoFmFLAlNOwAgwmN" Name="To" Kind="InputPin" />
+                <Pin Id="IxOJYMA7ByEOfmm0UTzfsX" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="416,386,66,26" Id="EleUHPUDrfPPAK4AJdv0qC">
+                <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
+                  <Choice Kind="OperationCallFlag" Name="Add" />
+                </p:NodeReference>
+                <Pin Id="QWwJUnX8RkZL0y1R1sawAm" Name="Input" Kind="StateInputPin" />
+                <Pin Id="ThjMobgAJe7OPsTAzxxaNI" Name="Item" Kind="InputPin" />
+                <Pin Id="JMwc2Afmcz3LpvAUKtx7H7" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <Patch Id="JI15lAntWNBNAr1ZtqX65y" Name="Draw Node Delegate" ManuallySortedPins="true">
+              <Pin Id="NxZjolsvVwsL6sgkBKJJrI" Name="Input 1" Kind="InputPin" />
+              <Pin Id="TbRiFUUjpXlM4qYKb7qblM" Name="Input 2" Kind="InputPin" />
+              <ControlPoint Id="LydEJFn9NgsM91suft2Ggz" Bounds="562,297" />
+              <ControlPoint Id="PqY1SxvRMsnNN6DFMm32SL" Bounds="622,297" />
+              <Node Bounds="595,335,46,26" Id="N83BhRAcoDqLcB7dYZ1zU1">
+                <p:NodeReference>
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="NodeSet" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="LYuAQ3anXOGNQMuS7GKjQE" Name="Node" Kind="InputPin" />
+                <Pin Id="QA2jeBNF3YaM4iXgsDJS7o" Name="Position" Kind="InputPin" />
+                <Pin Id="TZh2faC0aYVMwtAMRW88iX" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="534,379,66,26" Id="JN4NwY4F2XKNuA8jasHV8h">
+                <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Add" />
+                  <CategoryReference Kind="ClassType" Name="SpreadBuilder" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="OOCRglgPcFyPIXgeywo39M" Name="Input" Kind="StateInputPin" />
+                <Pin Id="STyICcJaxoNLIUqMp7750u" Name="Item" Kind="InputPin" />
+                <Pin Id="EgEwFHysiryNj4EZhnAdpi" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="M9T2M7D9bUbN95PXWKJSZ6" SlotId="PeSpJAH11H1QRk20y2N2eB" Bounds="325,203" />
+          <Pad Id="NXDZShgN3g0LRIqC33fQgQ" SlotId="RDtUvI67U3cPwRt6hV55Mp" Bounds="485,192" />
+          <Node Bounds="821,78" Id="MDn2lyHS8i1LuYBMsw7U5h">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.Graph" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="Graph" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="BYKHwaPRs1UNb5tzUbXWMz" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="818,151,70,26" Id="H1hMYaDYIYkPXJ0e6GAAcV">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.Graph" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CreateNode" />
+              <CategoryReference Kind="AssemblyCategory" Name="Graph" NeedsToBeDirectParent="true" />
+              <PinReference Kind="InputPin" Name="Label" />
+            </p:NodeReference>
+            <Pin Id="E5NmKzGymkDPOKpqtQV5UQ" Name="Input" Kind="InputPin" />
+            <Pin Id="RrXv5glzQW3LNarL3q9h08" Name="Label" Kind="InputPin" DefaultValue="A Node">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="FWBNIDpVABDNYb6wudYocc" Name="Output" Kind="OutputPin" />
+            <Pin Id="Stq0wQQN1HkQOK8R8bVIw1" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="824,252,68,19" Id="NXZmPa0s312NmDlOxQ4Jz5">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.ForceDirectedGraph.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CreateEdge" />
+              <CategoryReference Kind="Category" Name="Main" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="FCPleflcpEgNZmUQpRNv2p" Name="Input" Kind="InputPin" />
+            <Pin Id="Hxvkj7LtjlWLCO4Azaibdw" Name="Source" Kind="InputPin" />
+            <Pin Id="AdQxfU553gnPMbXPbKx626" Name="Target" Kind="InputPin" />
+            <Pin Id="PIKxK3JKNTcOV7tbVAxV6o" Name="Length" Kind="InputPin" DefaultValue="10">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Qaat1BOaIF7OckZy1tnp19" Name="Output" Kind="OutputPin" />
+            <Pin Id="FRfPDfvv0TILGvBZnpBpXF" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="818,197,70,26" Id="Cpen3jCbz7LMGZAsEdU3Rl">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.Graph" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CreateNode" />
+              <CategoryReference Kind="AssemblyCategory" Name="Graph" NeedsToBeDirectParent="true" />
+              <PinReference Kind="InputPin" Name="Label" />
+            </p:NodeReference>
+            <Pin Id="SkMQw15QWjDK9daXcx8nTt" Name="Input" Kind="InputPin" />
+            <Pin Id="DnFj8Dv5S0nMPmmwTeMjix" Name="Label" Kind="InputPin" DefaultValue="Aother node">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Gw8wXjzWPZlLDfkTU0pGs2" Name="Output" Kind="OutputPin" />
+            <Pin Id="PLs6uJt2aSJQR2JQnRBS9D" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="O58DZF4G5D4LZ9YkKKHpNz" SlotId="HOTqazoHQXNQWFEId51OiM" Bounds="825,338" />
+          <Node Bounds="874,307,76,26" Id="Qpa09I7yBowPmrnzCWhxXh">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.ForceDirected2D" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="ForceDirected2D" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="HUisbAhi8ngQNGqiNoQukS" Name="I Graph" Kind="InputPin" />
+            <Pin Id="Fl6VazGPtdNLRcVo2fOPBW" Name="I Stiffness" Kind="InputPin" DefaultValue="81.76">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OAf4G7F3GavN2x7DjmU5Ie" Name="I Repulsion" Kind="InputPin" DefaultValue="40000">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="GRuQ5rEhuexMY9WM9KK50V" Name="I Damping" Kind="InputPin" DefaultValue="0.5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PrNe43q3hkAP7aorj1jm2b" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="475,520,86,19" Id="JcyjEdOxLYNO6YQtpTn9Jl">
+            <p:NodeReference LastCategoryFullName="Animation.IFrameClock" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="TimeDifference (Float32)" />
+            </p:NodeReference>
+            <Pin Id="MHIgURfXu3iNJ71a6j8O0D" Name="Clock" Kind="InputPin" />
+            <Pin Id="F1j8eIoYreUO8Vy9AgwslN" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="443,583" Id="QclcAKUZxZ3OzYPQLvGQIw">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.AbstractRenderer" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Draw" />
+              <CategoryReference Kind="AssemblyCategory" Name="AbstractRenderer" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UC9TOy1a9tsOe0OomJXtz4" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SCUnnBe6ApmQKZFqycj6bF" Name="I Time Step" Kind="InputPin" />
+            <Pin Id="JYEkGZ7nTRMLzrEKFmoqau" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="IDrzNaGXAAgOom5xaTPBtF" Name="Apply" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Node>
+          <Pad Id="RjAuCdZZ1TuO74kbRv5FYS" SlotId="S3GW30DcGCiL2EXRAny9fg" Bounds="373,523" />
+          <Node Bounds="238,590" Id="L7EATeIv1WSLbfRMNGLM5z">
+            <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
+              <Choice Kind="OperationCallFlag" Name="ToSpread" />
+            </p:NodeReference>
+            <Pin Id="AkP6IUS78SvPw0i14KIbUc" Name="Input" Kind="StateInputPin" />
+            <Pin Id="G1kA9AqM3xMOdwHvtqNQoi" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="HF65djAFdKsMTJHDJbg4eh" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="268,620" Id="TqYJRO3w0SwPd0dYpxkYNW">
+            <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
+              <Choice Kind="OperationCallFlag" Name="ToSpread" />
+            </p:NodeReference>
+            <Pin Id="ErnbAAtWyQDNnCmmzksfoD" Name="Input" Kind="StateInputPin" />
+            <Pin Id="LlZtVcYbZQZMobHGFjGAGs" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Rh0rElX9einOzqvnbxwOAp" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="M15YUMeSDakPIbgbJQ7zKb" Comment="" Bounds="219,688,35,15" ShowValueBox="true" isIOBox="true">
+            <p:Value />
+          </Pad>
+          <Pad Id="P5H31aU4dcMPIIlU5BWzto" Comment="" Bounds="350,700,35,15" ShowValueBox="true" isIOBox="true">
+            <p:Value />
+          </Pad>
+          <Node Bounds="940,115,38,26" Id="EKuxRoe43bJMKMQKYgDJEY">
+            <p:NodeReference LastCategoryFullName="EpForceDirectedGraph.cs.Graph" LastSymbolSource="EpForceDirectedGraph.cs.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="Graph" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="M8lO0Gqgc1dQKXygGFMvni" Name="Output" Kind="StateOutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="G8QglRzUEraNrudXNu6PIZ" Name="Create" ParticipatingElements="KaovGPkOOhmLLM5d1NCfs8,MDn2lyHS8i1LuYBMsw7U5h,H1hMYaDYIYkPXJ0e6GAAcV,Cpen3jCbz7LMGZAsEdU3Rl,EKuxRoe43bJMKMQKYgDJEY" />
+        <Patch Id="F8oBN1XYvoLNlzs9uTSutZ" Name="Update" />
+        <ProcessDefinition Id="IDXLIdzeoWuQKCIkamuJrx">
+          <Fragment Id="LLBuPU2JTTRLlHNdfsEET1" Patch="G8QglRzUEraNrudXNu6PIZ" Enabled="true" />
+          <Fragment Id="B65hsibeHAkLhPikwmiVRs" Patch="F8oBN1XYvoLNlzs9uTSutZ" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="PpxsDpM9CgINE8byBaH9KA" Ids="RyQJjikrdDzMiDgvA9wjKF,Ph7uSiDibe3LF7ouFu8uGt" IsHidden="true" />
+        <Link Id="CviDkl10UzHNPmaQAUwtkN" Ids="CKdEpHdV35QNB0BcY4MXXq,LLDyORq9fn6PTaGNTQnLz5" IsHidden="true" />
+        <Link Id="FT7qbdmZ8jhNyTyUcaIgM9" Ids="LSahYmG9gzxODxgCIuzoIL,Sq8U8HVT5W7LKl78qEuiet" IsHidden="true" />
+        <Link Id="RghHJToK8b9Lk826tbuDhA" Ids="NxZjolsvVwsL6sgkBKJJrI,LydEJFn9NgsM91suft2Ggz" IsHidden="true" />
+        <Link Id="TFkYRULWNV5L4Am5SwRM9y" Ids="TbRiFUUjpXlM4qYKb7qblM,PqY1SxvRMsnNN6DFMm32SL" IsHidden="true" />
+        <Slot Id="PeSpJAH11H1QRk20y2N2eB" Name="Edges" />
+        <Link Id="SUAcaiNoQ2gPJGkw8PAi6I" Ids="M9T2M7D9bUbN95PXWKJSZ6,AOHe5U1F8amP6RbRhBFtSG" />
+        <Link Id="TKmLJFpWBFOL4xIcKTG4Ma" Ids="LLDyORq9fn6PTaGNTQnLz5,SKDcxuiUBV1LDxLS5eBDAz" />
+        <Link Id="SIcEBwIjY6wLOn2fE7462B" Ids="Sq8U8HVT5W7LKl78qEuiet,KHqvebKoFmFLAlNOwAgwmN" />
+        <Link Id="RYNKAQRPMjIMUC1zCZyzn2" Ids="Ph7uSiDibe3LF7ouFu8uGt,QEvS6jSyj1wONqiSOiX7R2" />
+        <Link Id="DwfDgvykbBDMa2SLc3GMep" Ids="IxOJYMA7ByEOfmm0UTzfsX,ThjMobgAJe7OPsTAzxxaNI" />
+        <Link Id="BGGMaM4FvdnQFodbIhgzxp" Ids="M9T2M7D9bUbN95PXWKJSZ6,QWwJUnX8RkZL0y1R1sawAm" />
+        <Link Id="VfxJKe00kgcMSZD6BNcAj5" Ids="TZh2faC0aYVMwtAMRW88iX,STyICcJaxoNLIUqMp7750u" />
+        <Link Id="SyUxLMFWbB8MyTg5w7769k" Ids="LydEJFn9NgsM91suft2Ggz,LYuAQ3anXOGNQMuS7GKjQE" />
+        <Link Id="LhWil8LM4NtOfToj52zzVf" Ids="PqY1SxvRMsnNN6DFMm32SL,QA2jeBNF3YaM4iXgsDJS7o" />
+        <Slot Id="RDtUvI67U3cPwRt6hV55Mp" Name="Nodes" />
+        <Link Id="FfckAXYrbO1N3nK42VlDyL" Ids="NXDZShgN3g0LRIqC33fQgQ,OOCRglgPcFyPIXgeywo39M" />
+        <Link Id="TxtaFi3K6FFLsrAIzTgcHF" Ids="NXDZShgN3g0LRIqC33fQgQ,JC8jcXqryrxQBuIy89ceSC" />
+        <Link Id="NFJcVqRw3DlMIE6wZB5XFM" Ids="BYKHwaPRs1UNb5tzUbXWMz,E5NmKzGymkDPOKpqtQV5UQ" />
+        <Link Id="VJUV3BnviTTN8ZNET6B0In" Ids="FWBNIDpVABDNYb6wudYocc,SkMQw15QWjDK9daXcx8nTt" />
+        <Link Id="KMzu6Kj7otvOaHZL5PDYiK" Ids="Stq0wQQN1HkQOK8R8bVIw1,Hxvkj7LtjlWLCO4Azaibdw" />
+        <Link Id="RbYw3h0P5INNCdns2YSZUp" Ids="PLs6uJt2aSJQR2JQnRBS9D,AdQxfU553gnPMbXPbKx626" />
+        <Link Id="RXooHu7DUBdMYQu7K8Fdkt" Ids="Gw8wXjzWPZlLDfkTU0pGs2,FCPleflcpEgNZmUQpRNv2p" />
+        <Slot Id="HOTqazoHQXNQWFEId51OiM" Name="Graph" />
+        <Link Id="OwkvEm0MhIwMHmJQPAWlAg" Ids="PrNe43q3hkAP7aorj1jm2b,O58DZF4G5D4LZ9YkKKHpNz" />
+        <Link Id="SNOudnWEz1MMTyeQrB8sis" Ids="O58DZF4G5D4LZ9YkKKHpNz,QHL9zFPBTSWMOkRkYVt67G" />
+        <Slot Id="S3GW30DcGCiL2EXRAny9fg" Name="Renderer" />
+        <Link Id="UxpxJJGJ4fzM3IsiRv4Sq9" Ids="RjAuCdZZ1TuO74kbRv5FYS,UC9TOy1a9tsOe0OomJXtz4" />
+        <Link Id="CXTljpyMJmUN4H88S4W7tl" Ids="Fb3UHy12xvCNTxSe284E4B,RjAuCdZZ1TuO74kbRv5FYS" />
+        <Link Id="AiLXe5MfaJPLeeSZ31K8zz" Ids="F1j8eIoYreUO8Vy9AgwslN,SCUnnBe6ApmQKZFqycj6bF" />
+        <Link Id="LFmgasQ1zhrOtANzvrKjaY" Ids="M9T2M7D9bUbN95PXWKJSZ6,AkP6IUS78SvPw0i14KIbUc" />
+        <Link Id="ILOeJldSnoVMfxdVQTI0yA" Ids="NXDZShgN3g0LRIqC33fQgQ,ErnbAAtWyQDNnCmmzksfoD" />
+        <Link Id="EeqapqhsDnePRqEVgAMHBu" Ids="HF65djAFdKsMTJHDJbg4eh,M15YUMeSDakPIbgbJQ7zKb" />
+        <Link Id="J0nNhaKbEUUL0ilqL8esVm" Ids="Rh0rElX9einOzqvnbxwOAp,P5H31aU4dcMPIIlU5BWzto" />
+        <Link Id="RJrmN8PNLcJMuny5reF40A" Ids="M8lO0Gqgc1dQKXygGFMvni,HUisbAhi8ngQNGqiNoQukS" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Q091u7gBXu1Nvsu2F2Fcsp" Location="VL.Skia" Version="2020.1.7" />
+  <PlatformDependency Id="BK024AqeYl7Owe77AyohBE" Location="./VL.ForceDirectedGraph/VL.ForceDirectedGraph/bin/Debug/netstandard2.0/VL.ForceDirectedGraph.dll" />
+  <NugetDependency Id="ATjUrC8Pe51QUnr1Wo46Vn" Location="EpForceDirectedGraph.cs" Version="1.0.0" />
+  <NugetDependency Id="MG1OEALxziYLE6rKpmQXjF" Location="VL.IO.OSC" Version="2020.1.7" />
+</Document>

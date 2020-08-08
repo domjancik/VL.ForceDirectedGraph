@@ -1,0 +1,13 @@
+
+# .v4p backup files
+*~.xml
+
+# Dynamic plugins .dll
+bin/
+obj/
+.vs/
+packages/
+appveyor/nuget.exe
+/lib/netstandard2.0/
+
+/.vl/*
